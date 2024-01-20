@@ -176,4 +176,4 @@ elif stage == "development":
     from .settings_dev import *
 else:
     # Arrojar un error si MYPROJECT_STAGE tiene un valor desconocido.
-    raise ValueError("Unknown stage: {stage}")
+    raise ValueError(f"Unknown stage: {stage}")

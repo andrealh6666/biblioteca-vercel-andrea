@@ -4,6 +4,14 @@
          "src": "locallibrary/wsgi.py",
          "use": "@vercel/python"
      }
+     ,
+     {
+        "src": "migrate_modelDB.sh",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "staticfiles"
+        }
+      }
      ],
    "routes": [
        {
